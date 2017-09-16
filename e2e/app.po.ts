@@ -1,11 +1,11 @@
-import { browser, element, by } from 'protractor';
+import { browser, element, by, promise } from 'protractor';
 
-export class MSTestProjectPage {
-  navigateTo() {
+export class Ng2SeedPage {
+  navigateTo(): promise.Promise<object> {
     return browser.get('/');
   }
 
-  getParagraphText() {
+  getParagraphText(): promise.Promise<string> {
     return element(by.css('app-root h1')).getText();
   }
 }
