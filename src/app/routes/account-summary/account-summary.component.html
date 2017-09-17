@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="header">
+        <div class="account"><div>Account</div></div>
+        <div class="cash sorted">
+            <div>Available Cash</div>
+            <div>Today's Change</div>
+        </div>
+    </div>
+    <div class="item-container" >
+        <app-account-item *ngFor="let item of accountItems"></app-account-item>
+        <div class="load-more">
+                <div class="more">Load more</div>
+            </div>
+        </div>
+</div>
+

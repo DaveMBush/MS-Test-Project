@@ -1,0 +1,1 @@
+I created a routes directory so that if this app ever shows more than one page, refactoring to use routes will be minimal

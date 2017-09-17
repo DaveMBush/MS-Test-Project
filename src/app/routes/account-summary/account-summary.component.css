@@ -1,0 +1,95 @@
+:host {
+    max-width: 414px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    background-color: #0f8ec7;
+    font-weight: bold;
+    color: #333;
+}
+
+.container {
+    padding: 10px 5px;
+    height: calc(100% - 20px);
+}
+
+.account {
+    width: 50%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.account > div {
+    position: absolute;
+    left: 10px;
+    bottom: 4px;
+}
+
+.cash {
+    width: 50%;
+    float: right;
+    height: 100%;
+    position: relative;
+}
+
+.cash > div:first-child {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+}
+
+.cash > div:nth-child(2) {
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+    color: #7b7b7b;
+}
+
+.sorted {
+    background-color: #efefef;
+}
+
+.header {
+    position: relative;
+    height: 34px;
+    background-color: #f7f7f7;
+    font-size: 11px;
+    border-bottom: #bbb 1px solid;
+    z-index: 2;
+}
+
+.item {
+    display: block;
+    background-color: #fff;
+    height: 48px;
+}
+
+.item-container {
+    display: block;
+    max-height: calc(100% - 34px);
+    overflow-y: auto;
+    padding-left: 10px;
+    background-color: #fff;
+    position: relative;
+    top: -1px;
+    z-index: 1;
+}
+
+.load-more {
+    border-top: #e5e5e5 1px solid;
+    display: block;
+    height: 48px;
+    position: relative;
+}
+
+.more {
+    color: #1574b1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    top: 14px;
+}

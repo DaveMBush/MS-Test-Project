@@ -1,0 +1,37 @@
+:host {
+    border-top: #e5e5e5 1px solid;
+    display: block;
+    height: 48px;
+}
+
+.account {
+    color: #1574b1;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 800;
+    width: 45%;
+    float: left;
+}
+
+.cash {
+    width: 45%;
+    float: right;
+    height: 100%;
+    background-color: gray;
+    position: relative;
+}
+
+.total {
+    color: #333;
+    font-size: 15px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.daily {
+    position: absolute;
+    font-size: 11px;
+    right: 8px;
+    bottom: 8px;
+}
