@@ -16,8 +16,7 @@
 .cash {
     width: 45%;
     float: right;
-    height: 100%;
-    background-color: gray;
+    height: 48px;
     position: relative;
 }
 
@@ -34,4 +33,16 @@
     font-size: 11px;
     right: 8px;
     bottom: 8px;
+}
+
+.red {
+    color: #ff5966;
+}
+
+.green {
+    color: #33b057;
+}
+
+.gray {
+    color: #7c7c7c;
 }

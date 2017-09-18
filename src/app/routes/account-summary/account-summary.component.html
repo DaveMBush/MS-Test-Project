@@ -1,14 +1,15 @@
 <div class="container">
     <div class="header">
-        <div class="account"><div>Account</div></div>
-        <div class="cash sorted">
-            <div>Available Cash</div>
+        <div class="account" (click)="onAccountClick()" [ngClass]="{sorted: (accountPage | async)?.sortField === 'account'}"><div>
+            Account<span *ngIf="(accountPage | async)?.sortField === 'account'" [ngClass]="{asc: (accountPage | async)?.sortOrder === 'asc', des: (accountPage | async)?.sortOrder === 'des'}"></span></div></div>
+        <div class="cash" (click)="onCashClick()" [ngClass]="{sorted: (accountPage | async)?.sortField === 'cash'}">
+            <div><span *ngIf="(accountPage | async)?.sortField === 'cash'" [ngClass]="{asc: (accountPage | async)?.sortOrder === 'asc', des: (accountPage | async)?.sortOrder === 'des'}"></span>Available Cash</div>
             <div>Today's Change</div>
         </div>
     </div>
     <div class="item-container" >
-        <app-account-item *ngFor="let item of accountItems"></app-account-item>
-        <div class="load-more">
+        <app-account-item *ngFor="let item of (rowsObservable | async)" [item]=item></app-account-item>
+        <div *ngIf="(accountSummaryObservable | async)?.count !== (accountSummaryObservable | async)?.total" class="load-more" (click)="onLoadMore()">
                 <div class="more">Load more</div>
             </div>
         </div>
