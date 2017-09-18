@@ -2,7 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli)
 
-`npm start` to compile and run then launch browser to http://localhost:4200
+`npm install` to retrieve dependencies
+
+`npm start` to compile and run the local server
+
+point browser to http://localhost:4200
+
+Tested on Chrome and Edge
+
+# Notes:
 
 The "database" is mocked out inside the account-summary.service.ts file.  It returns an observable just like 
 an Http or HttpClient call would.
