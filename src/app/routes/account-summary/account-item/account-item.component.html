@@ -2,6 +2,7 @@
   <div class="account">{{item.name}} - {{item.accountNumber}}</div>
   <div class="cash">
     <div class="total">{{item.balance | currency:'USD':true:'2.2-2'}}</div>
-    <div class="daily" [ngClass]='{red: item.valueChange < 0, green: item.valueChange > 0, gray: item.valueChange === 0}'>{{item.percentChange}}% / {{absolute(item.valueChange)| currency:'USD':true:'2.2-2'}}</div>
+    <div class="daily" [ngClass]='{red: item.valueChange < 0, green: item.valueChange > 0, gray: item.valueChange === 0}'>
+      <span *ngIf="item.valueChange > 0">+</span>{{item.percentChange}}% / {{absolute(item.valueChange)| currency:'USD':true:'2.2-2'}}</div>
   </div>
 </div>
